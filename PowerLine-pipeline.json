@@ -1,0 +1,15 @@
+{
+  "pipeline":[
+    {
+      "type":"readers.las",
+      "filename":"PowerLine.las"
+    },
+    {
+      "type":"writers.text",
+      "format":"csv",
+      "order":"X,Y,Z,Red,Green,Blue,PointSourceId,ScanAngleRank,ScanDirectionFlag,NumberOfReturns,ReturnNumber,Intensity,Classification",
+      "keep_unspecified":"false",
+      "filename":"PowerLine.csv"
+    }
+  ]
+}
